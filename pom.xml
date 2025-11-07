@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>NewRestAssured</groupId>
+  <artifactId>NewRestAssured</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>NewRestAssured</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <!-- Rest Assured (Core) -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.5.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- JSON Path (for JSON parsing) -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-path</artifactId>
+        <version>5.5.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- JSON Schema Validator (optional but useful for validation) -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>5.5.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Jackson Databind (for serialization/deserialization) -->
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.17.2</version>
+    </dependency>
+
+    <!-- JUnit 5 (Test Framework) -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.11.0</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+</project>
